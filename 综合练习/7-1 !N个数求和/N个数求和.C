@@ -44,9 +44,9 @@ int main(){
 		d*=-1;
 		sum*=-1;
 	}
-	
-	if(sum/d==0) printf("%d/%d", sum%d/k, d/k);
-	else if(sum%d) printf("%d %d/%d", sum/d, sum%d/k, d/k);
-		 else printf("%d", sum/d);
+	if(sum==0) printf("0");
+	else if(sum/d==0) printf("%d/%d", sum%d/k, d/k);
+		 else if(sum%d) printf("%d %d/%d", sum/d, sum%d/k, d/k);
+	  		  else printf("%d", sum/d);
 	
 } 
