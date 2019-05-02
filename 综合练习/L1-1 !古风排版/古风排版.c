@@ -13,17 +13,30 @@ int main(){
 	getchar();
 	gets(str);
 	n1=strlen(str);
+	if("%d", n1);
 	for(i=0;	i<N+N;	i++){
 		str[n1+i]=' ';
 	}	
-	
-	for(i=n1/N;	i>=0;	i--){
+	if(N>n1) N=n1;
+	if(n1%N){
+		for(i=n1/N;	i>=0;	i--){
+			for(i2=0;	i2<N;	i2++,t++){
+				str2[i2][i]=str[t];
+			
+			}
+		
+		} 
+	}
+	else{
+		for(i=n1/N-1;	i>=0;	i--){
 		for(i2=0;	i2<N;	i2++,t++){
 			str2[i2][i]=str[t];
 			
 		}
 		
 	} 
+	}
+	
 	//printf("%d\n",n1/N); 
 	if(N!=1){
 	
